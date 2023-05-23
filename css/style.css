@@ -19,7 +19,7 @@ body{
 .custom-width{
     width: 35%;
 }
-.about,.product{
+.about,.project{
     padding: 18vh 0 8vh 0;
 }
 .custom-letter{
@@ -30,6 +30,13 @@ body{
     gap:1.6rem;
     grid-template-areas: 'x-1'
                          'x-2';
+}
+.custom-img-width{
+    width: 200px;
+    height: 200px;
+}
+#navbarToggleBtn{
+    color: transparent;
 }
 
 /* navbar */
@@ -101,5 +108,10 @@ body{
         width: 100%!important;
         font-size: 1.3rem;
         padding: 1.2rem;
+    }
+    /* custom padding */
+    .about .container-fluid .text-center.custom-letter,
+    .project .container-fluid .text-center.custom-letter{
+        margin-bottom: 8vh;
     }
 }
