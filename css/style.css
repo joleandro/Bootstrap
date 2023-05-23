@@ -1,0 +1,105 @@
+body{
+    background: linear-gradient(90deg, rgba(50,48,77,1) 0%, rgba(74,74,135,1) 52%, rgba(0,212,255,1) 100%);
+}
+:root{
+    --text-p-white : #fff;
+    --text-p-light-blue: #0d6efd;
+    --bg-p-black : #000; 
+}
+
+/* default customize style */
+.custom-shadow{
+    box-shadow: 0 8px 10px rgb(0, 0, 0);
+}
+.custom-position {
+    position: relative;
+    top: 25%;
+    left: 0;
+}
+.custom-width{
+    width: 35%;
+}
+.about,.product{
+    padding: 18vh 0 8vh 0;
+}
+.custom-letter{
+    letter-spacing: .3rem;
+}
+.custom-template-col-2{
+    grid-template-columns: repeat(2,1fr);
+    gap:1.6rem;
+    grid-template-areas: 'x-1'
+                         'x-2';
+}
+
+/* navbar */
+.navbar.navbar-expand-lg{
+    background:linear-gradient(90deg, rgba(50,48,77,1) 0%, rgba(74,74,135,1) 52%, rgba(0,212,255,1) 100%);
+}
+
+/* home */
+.home{
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1320x600/?computer');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    box-shadow: 0 8px 10px rgb(0, 0, 0);
+}
+#i-facebook,#i-linkedin,#i-twitter{
+    font-size: 3rem;
+    color: var(--text-p-light-blue);
+}
+
+/* about */
+.about .jumbotron .card{
+    background-color:var(--bg-p-black)!important;
+}
+
+/* responsive device */
+@media (max-width:960px) {
+    html{
+        font-size: 90%;
+    }
+    .custom-width{
+        width: 50%;
+    }
+}
+/* tablets */
+@media (max-width:650px){
+    html{
+        font-size: 85%;
+    }
+    .custom-width{
+        width: 65%;
+    }
+    .home .card{
+        width: 60%!important;
+    }
+    .about .jumbotron .card{
+        grid-area: x-2;
+    }
+    .custom-template-col-2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image img{
+        width: 45%!important;
+    }
+}
+
+/* mobile */
+@media (max-width:368px){
+    html{
+        font-size: 85%;
+    }
+    .home .container-fluid{
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .home .card{
+        width: 100%!important;
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+}
