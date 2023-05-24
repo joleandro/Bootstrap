@@ -5,9 +5,13 @@ body{
     --text-p-white : #fff;
     --text-p-light-blue: #0d6efd;
     --bg-p-black : #000; 
+    --text-p-whiteGray :#ddddddee;
 }
 
 /* default customize style */
+.about,.project,.contact{
+    padding: 18vh 0 0;
+}
 .custom-shadow{
     box-shadow: 0 8px 10px rgb(0, 0, 0);
 }
@@ -18,9 +22,6 @@ body{
 }
 .custom-width{
     width: 35%;
-}
-.about,.project{
-    padding: 18vh 0 8vh 0;
 }
 .custom-letter{
     letter-spacing: .3rem;
@@ -37,6 +38,11 @@ body{
 }
 #navbarToggleBtn{
     color: transparent;
+}
+#ControlInput1::placeholder,
+#ControlInput2::placeholder,
+#ControlTextarea1::placeholder{
+    color: var(--text-p-whiteGray);
 }
 
 /* navbar */
@@ -96,7 +102,7 @@ body{
 }
 
 /* mobile */
-@media (max-width:368px){
+@media (max-width:412px){
     html{
         font-size: 85%;
     }
