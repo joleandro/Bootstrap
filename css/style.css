@@ -12,6 +12,9 @@ body{
 .about,.project,.contact{
     padding: 18vh 0 0;
 }
+.footer{
+    margin:18vh 0 0;
+}
 .custom-shadow{
     box-shadow: 0 8px 10px rgb(0, 0, 0);
 }
@@ -43,6 +46,10 @@ body{
 #ControlInput2::placeholder,
 #ControlTextarea1::placeholder{
     color: var(--text-p-whiteGray);
+}
+/* footer */
+.custom-footer{
+    height: 10vh;
 }
 
 /* navbar */
